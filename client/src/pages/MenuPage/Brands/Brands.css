@@ -1,0 +1,33 @@
+.brands {
+    margin: 40px 0;
+  }
+
+ 
+  .brand-list .brand-item {
+    opacity: 0.5;
+    transition: 0.2s ease opacity;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+  gap: 3rem;
+    border-radius: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #dee0ea;
+    padding: 30px 5px;
+    li{
+      .brand-list .brand-item li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+        img{
+            border-radius: 10px;
+
+        }
+    }
+  }
+
+  .brand-list .brand-item:hover {
+    opacity: 1;
+  }

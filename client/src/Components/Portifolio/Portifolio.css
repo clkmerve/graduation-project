@@ -1,0 +1,203 @@
+:root{
+    --primaryColor:hsl(22, 94%, 14%);
+    --bgColor:hsl(22, 96%, 37%);
+    --whiteColor:hsl(0, 0%, 100%);
+    --blackColor:hsl(0, 0%, 0%);
+    --primaryColorLight: hsl(26, 81%, 19%);
+
+
+    --biggestFontsize:2.5rem;
+    --h1FontSize:1.8rem;
+    --h2FontSize:1.25rem;
+    --h3FontSize:1rem;
+    --normalFontSize:0.938rem;
+    --smallFontSize:0.813rem;
+    --borderRadius:3rem;
+
+}
+
+.portifolio{
+ .secContainer{
+    gap: 2rem;
+    
+    .leftContent{
+        .secHeading{
+            .h1{
+                font-size: var(--biggestFontsize);
+                color: darkred;
+            }
+            .yazı{
+           color: darkred;
+            }
+        }
+
+     .grid{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        
+        .singlePortifolio{
+         .iconDiv{
+            .Icon{
+                font-size: 100px;
+                color:darkred;
+                padding: 1rem;
+              
+            }
+         }
+     }
+        .infor{
+            .h2{
+                color: var(--primaryColor);
+                font-size: var(--h2FontSize);
+            }
+
+            .netText{
+                color: var(--primaryColorLight);
+                font-size: var(--h3FontSize);
+            }
+        }
+    
+      
+   }
+  }
+ }
+}
+
+@media screen and (min-width: 480px){
+    .portifolio{
+        .secContainer{
+            grid-template-columns: repeat(2, 1fr);
+            .leftContent{
+                .secHeading{
+                    .h1{
+                        font-size: var(--biggestFontsize);
+                    }
+                    .yazı{
+                        font-size: var(--h2FontSize);
+                        padding: .5rem 0;
+                    }
+                }
+
+                .grid{
+                    margin-bottom: 1rem;
+                    .singlePortifolio{
+                        gap: 1.5rem;
+
+                        .iconDiv{
+                            .Icon{
+                                font-size: 90px;
+                           }
+                        }
+
+                        .infor{
+                            .h2{
+                            padding-bottom: .5rem;
+                            font-size: var(--h1FontSize);
+                            }
+                            .netText{
+                                font-size: var(--h3FontSize);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 660px){
+    .portifolio{
+        .secContainer{
+            
+            .leftContent{
+                .secHeading{
+                    .h1{
+                        font-size: 2rem;
+                    }
+                    .yazı{
+                        font-size: var(--h2FontSize);
+                    }
+                }
+
+                .grid{
+                    grid-template-columns: repeat(2,1fr);
+                    .singlePortifolio{
+                        gap: 1.5rem;
+                    }
+                }
+            }
+
+            .rightContent{
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin: auto;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 820px){
+    .portifolio{
+        .secContainer{
+            grid-template-columns: repeat(2,1fr);
+
+            .leftContent{
+                .secHeading{
+                    .h1{
+                        font-size: var(--h2FontSize);
+                    }
+                    .yazı{
+                        font-size: var(--h3FontSize);
+                    }
+                }
+
+                .grid{
+                    grid-template-columns: repeat(1,1fr);
+                    .singlePortifolio{
+                        gap: 1.5rem;
+                    }
+                }
+            }
+
+            .rightContent{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .portifolio{
+        .secContainer{
+            gap: 3rem;
+
+            .leftContent{
+                .secHeading{
+                    .h1{
+                        font-size: 2rem;
+                    }
+                    .yazı{
+                        font-size: var(--h3FontSize);
+                    }
+                }
+
+                .grid{
+                    gap: 2.5rem;
+                    margin-top: 3rem;
+                    .singlePortifolio{
+                        gap: 2rem;
+                    }
+
+                }
+            }
+        }
+    }
+}

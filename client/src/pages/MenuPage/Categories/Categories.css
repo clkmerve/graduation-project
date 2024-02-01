@@ -1,0 +1,20 @@
+.categories {
+    margin: 40px 0;
+    h2{
+      font-size:var(--h1FontSize) ;
+      color: darkred;
+    }
+    p{
+      font-size: var(--h3FontSize);
+      color: darkred;
+    }
+  }
+
+  .categories .category-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  

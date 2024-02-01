@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name": "Analogue Resin Strap",
+        "price": {
+            "oldPrice": 165.00,
+            "newPrice": 108.00
+        },
+        "discount": 22,
+        "img": {
+            "singleImage": "images/React-Proje-foto1/foto34.jpg",
+            "thumbs": [
+                "images/React-Proje-foto1/foto36.jpg",
+                "images/React-Proje-foto1/foto36.jpg",
+                "images/React-Proje-foto1/foto36.jpg"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Ridley High Waist",
+        "price": {
+            "oldPrice": 208.00,
+            "newPrice": 100
+        },
+        "discount": 33,
+        "img": {
+            "singleImage": "images/React-Proje-foto1/foto39.jpg",
+            "thumbs": [
+                "images/React-Proje-foto1/foto37.jpg",
+                "images/React-Proje-foto1/foto37.jpg",
+                "images/React-Proje-foto1/foto37.jpg"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Blush Beanie",
+        "price": {
+            "oldPrice": 165.00,
+            "newPrice": 38.00
+        },
+        "discount": 90,
+        "img": {
+            "singleImage": "images/React-Proje-foto1/foto31.jpg",
+            "thumbs": [
+                "images/React-Proje-foto1/foto39.jpg",
+                "images/React-Proje-foto1/foto39.jpg",
+                "images/React-Proje-foto1/foto39.jpg"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Mercury Tee",
+        "price": {
+            "oldPrice": 165.00,
+            "newPrice": 48.00
+        },
+        "discount": 40,
+        "img": {
+            "singleImage": "images/React-Proje-foto1/foto30.jpg",
+            "thumbs": [
+                "images/React-Proje-foto1/foto34.jpg",
+                "images/React-Proje-foto1/foto34.jpg",
+                "images/React-Proje-foto1/foto34.jpg"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "La Bohème Rose Gold",
+        "price": {
+            "oldPrice": 165.00,
+            "newPrice": 48.00
+        },
+        "discount": 40,
+        "img": {
+            "singleImage": "images/React-Proje-foto1/foto32.jpg",
+            "thumbs": [
+                "images/React-Proje-foto1/foto40.jpg",
+                "images/React-Proje-foto1/foto40.jpg",
+                "images/React-Proje-foto1/foto40.jpg"
+            ]
+        }
+    }
+]

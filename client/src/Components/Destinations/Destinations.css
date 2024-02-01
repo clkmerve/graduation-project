@@ -1,0 +1,281 @@
+:root{
+    --primaryColor:hsl(22, 94%, 14%);
+    --bgColor:hsl(22, 96%, 37%);
+    --whiteColor:hsl(0, 0%, 100%);
+    --blackColor:hsl(0, 0%, 0%);
+    --primaryColorLight: hsl(26, 81%, 19%);
+
+
+    --biggestFontsize:2.5rem;
+    --h1FontSize:1.6rem;
+    --h2FontSize:1.25rem;
+    --h3FontSize:1rem;
+    --normalFontSize:0.938rem;
+    --smallFontSize:0.813rem;
+    --borderRadius:3rem;
+
+}
+
+.destination{
+    .secContainer{
+        .redText{
+            color: var(--primaryColor);
+            font-size: small ;
+            font-weight: 500;
+        }
+
+        h3{
+            font-size: var(--h2FontSize);
+        }
+
+        .searchField{
+            margin-top: 2rem;
+            gap:1rem;
+            display: grid;
+            .inputField{
+                background: var(--primaryColorLight);
+                padding: 1rem;
+                border-radius: var(--borderRadius);
+
+                input{
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                }
+
+                .icon{
+                    color: var(--blackColor);
+                    
+                }
+            }
+
+            .btn{
+                gap: .5rem;
+                margin: auto;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .secMenu{
+            display: none;
+        }
+
+        .grid{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        .destinationContainer{
+            margin-top: 2rem;
+            
+
+            .singleDestination{
+                position: relative;
+                overflow: hidden;   /*kenarları yuvarla*/
+                border-radius: 1rem;
+                height: 260px;
+
+                .imgDiv{
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    img{
+                        height:100%;
+                        width: 100%;
+                        object-fit: cover;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+
+                &:hover{
+                    imgDiv{
+                        img{
+                            scale: 1.1;
+                        }
+                    }
+                }
+
+                .descInfo{
+                    position: absolute;  /*fotonun üstüne yazmanı sağladı*/
+                    z-index: 2; 
+                    bottom: 0;
+                    width: 100%;
+                    padding: 1rem 2rem 1rem;
+                    justify-content: space-between;
+                    
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        background: linear-gradient(
+                            rgba(0,0,0,0),
+                            rgba(0,0,0,0.76) /* fotonun altına karaltı yapıyo*/
+                        );
+                        z-index:-1;
+                    }
+
+                    .text{
+                        gap: .5rem;
+                        color: var(--whiteColor);
+
+                        .name{
+                            display: block;
+                            font-weight: 500;
+                            padding-bottom: .3rem;
+                            font-weight: var(--h2FontSize);
+                        }
+
+                        .flex ,.icon{
+                            font-size: var(--normalFontSize);
+                            display: flex;
+                            gap:0.25rem;
+                        }
+                    }
+
+                    .rating{
+                        padding: 8px 1rem;
+                        border-radius: var(--borderRadius);
+                        background-color: rgba(245,245,245,0.37);
+                        border: 1.5px solid rgba(255,255,255,0.241);
+                        font-size: var(--h3FontSize);
+                        font-weight: 600;
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .destination{
+        .secContainer{
+            .searchField{
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .destinationContainer{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .destination{
+        .secContainer{
+            .Title { 
+                .redText {
+                    font-size: var(--h2FontSize);
+                }
+            
+                h3 {
+                    font-size: var(--h1FontSize);
+                }
+
+                p{
+                    font-size: var(--h3FontSize);
+                }
+            }
+            
+            .secMenu{
+                display: block;
+                .flex{
+                    width: 100%;
+                    margin: 2rem auto;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    li{
+                        background: transparent;
+                        padding: 10px 17px;
+                        border-radius: var(--borderRadius);
+                        color: var(--blackColor);
+                        border: 1.5px dashed transparent;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: var(--primaryColor);
+                            border: 1.5px dashed var(--primaryColor);
+                        }
+                    }
+
+                    .active{
+                        color: var(--primaryColor);
+                        border: 1.5px dashed var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1014px) {
+    .destination{
+        .secContainer{ 
+           
+            .secMenu{
+                .flex{
+                    justify-content: left;
+                 
+                    li{
+                        background: transparent;
+                        padding: 10px 17px;
+                        border-radius: var(--borderRadius);
+                        color: var(--blackColor);
+                        border: 1.5px dashed transparent;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: var(--primaryColor);
+                            border: 1.5px dashed var(--primaryColor);
+                        }
+                    }
+
+                    .active{
+                        color: var(--primaryColor);
+                        border: 1.5px dashed var(--primaryColor);
+                    }
+                }
+            }
+
+            .searchField{
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .destinationContainer{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .destination{
+        .secContainer{
+            .Title { 
+                .redText {
+                    font-size: var(--h2FontSize);
+                }
+            
+                h3 {
+                    font-size: var(--biggestFontsize);
+                }
+
+                p{
+                    font-size: var(--h2FontSize);
+                }
+            }
+
+            .destinationContainer{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
